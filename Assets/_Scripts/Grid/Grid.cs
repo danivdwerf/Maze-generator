@@ -51,6 +51,6 @@ public class Grid
 
     public bool nodeExists(int x, int y)
     {
-        return (this.grid[x, y] == null);
+        return (x >= 0 && x < this.width && y >= 0 && y < this.height);
     }
 }
